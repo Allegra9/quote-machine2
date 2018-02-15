@@ -1,0 +1,234 @@
+
+.container-fluid {
+/*   border: solid; */
+/*   background-color: black; */
+}
+
+.container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 5%;
+/*   border: solid; */
+}
+
+.timeDate {
+    margin-top: 4%;
+    display: block;
+    width: 100%;
+    padding-bottom: 2%;
+    font-size: 1em;
+}
+
+/*date styling*/
+#date {
+  color: #000;
+  margin-top: 2%;
+  font-size: 1.5em;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+}
+
+/*time styling:*/
+#display {
+	  color: #000;
+    margin-top: 1%;
+    margin-bottom: 0;
+    display: block;
+	  font-size: 2em;
+    opacity: 0.80;
+}
+
+.quote-row {
+  min-height: 200px;
+}
+
+.quote_box {
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 5px;
+/*   box-shadow: 10px 10px 5px gray; */
+  max-width: 600px;
+  margin: 2% auto 0% auto;
+  padding: 0.5em 50px;
+}
+
+div.quote {
+  margin-right: 5px;
+  text-align: center;
+  max-width: 500px;
+  height: auto;
+}
+
+div.author {
+  max-width: 500px;
+  display: block;
+  text-align: right;
+}
+
+
+/* Twitter button */
+
+ul.twitter-button li {
+  display: inline-block;
+  margin: 3px;
+}
+
+ul.twitter-button li button {
+  background-color: transparent;
+  border: 1px solid grey;
+  padding: 20px 50px;
+  border-radius: 10%;
+}
+
+ul.twitter-button li button:hover {
+    background-color: #3090ff;
+    color: #fff;
+    transform: translateX(10px) rotate(360deg);
+    cursor: pointer;
+}
+
+
+
+/* Quote bar */
+
+ul.quote-bar {
+  padding: 50px;
+  text-align: center;
+}
+
+ul.quote-bar li {
+  display: inline-block;
+  margin: 2px;
+}
+
+ul.quote-bar li button {
+  background-color: transparent;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  border-size: 3px margin: auto;
+  box-shadow: 5px 5px 5px gray;
+  cursor: pointer;
+}
+
+ul.quote-bar li button.quote-back,
+ul.quote-bar li button.quote-forward {
+  width: 80px;
+  height: 50px;
+  font-size: 1em;
+}
+
+ul.quote-bar li button.quote-new {
+  width: 150px;
+  height: 50px;
+  font-size: 1em;
+}
+
+
+
+/* MEDIA QUERIES: */
+
+/* desktop and anything bigger than iPad landscape */
+@media screen and (min-width: 1024px) {
+
+    body {
+      background-image: url("https://www.visittheusa.com/sites/default/files/styles/hero_m_1300x700/public/images/hero_media_image/2016-12/ponies3%20at%20sunrise_0.jpg?itok=t8Iyaurv");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+ 
+     footer ul {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      opacity: 0.4;
+      font-weight: 700;
+      margin: auto 10%;
+  }
+}
+
+
+/* smaller than 1024 */
+/* iPad landscape */
+@media screen and (max-width: 1024px) {
+  
+    body {
+      background-image: url("http://animalli.com/wp-content/uploads/2016/11/animals-sunlight-fields-horses-sunset-pasture-rustic-sunrise-landscapes-farm-nature-wallpapers-hd-1920x1080.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+   footer ul {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      opacity: 0.6;
+      font-weight: 700;
+      margin: auto 10%;
+  }
+  
+}
+
+
+/* smaller than 768 */
+/* iPad portrait  */
+@media screen and (max-width: 768px) {   
+
+     body {
+      background-image: url("https://ak8.picdn.net/shutterstock/videos/12292751/thumb/4.jpg");
+      background-size: cover;
+    }
+     .timeDate {
+      font-size: 0.8em;
+    }
+     /*date styling*/
+     #date {
+      letter-spacing: 0.2em;
+    }
+  
+}
+
+
+/* smaller than 590 */
+/* iPhone 6 */
+@media screen and (max-width: 590px) {  
+
+     body {
+      background-image: url("https://ak8.picdn.net/shutterstock/videos/12292751/thumb/4.jpg");
+       background-size: cover;
+  }
+ 
+     .container {
+      padding-top: 10px;
+  }
+        
+    .timeDate {
+      font-size: 0.8em;
+  }
+      /*date styling*/
+     #date {
+      font-size: 1.5em;
+      letter-spacing: 0.1em;
+    }
+  
+  /* Quote bar */
+  
+    ul.quote-bar {
+      padding: 20px;
+/*       text-align: center; */
+    }
+
+    ul.quote-bar li {
+      margin: 1px;
+    }
+
+/*   smaller buttons for xs device: */
+    ul.quote-bar li button.quote-back,
+    ul.quote-bar li button.quote-forward {
+      width: 50px;
+      height: 50px;
+      padding: 5px 5px;
+    }
+  
+}

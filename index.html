@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+<title>Quote Machine-2</title>
+
+<!--1.LINK FOR BOOTSTRAP--> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<!--Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=PT+Serif|Pacifico|Playfair+Display" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">    
+    
+<!--2.LINK FOR ICONS-->   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Style sheet -->
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<!-- TIME & DATE --> 
+    
+<body onload="startTime(); startDate();">
+    <div class="container text-center">
+    <div class="row">
+        
+        <div class="timeDate">
+        <div id="date"></div>
+        <div id="display"></div>
+        </div>
+    </div> 
+    </div> 
+  <hr>
+
+<div class="container-fluid">
+
+  <div class="row quote-row">
+    <div class="col-md-8 col-sm-12">
+      <div class="quote_box text-center">
+        <div class="quote">
+          <h2><span><sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup></span><p id="quote"></p> </h2>
+        </div>
+        <div class="author">
+          <span><h3><p id = "author"></p></h3></span>
+        </div>
+        
+        <ul class="twitter-button">
+          <li>
+            <button id="tweetThis" class="btn btn-default btn-sm" title="Tweet this quote"><a class="twitter-share-link"><i id="twitter-share" class="fa fa-twitter fa-lg"></i></a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-9 col-sm-12 col-xs-12">
+      <ul class="quote-bar">
+        <li>
+          <button id="previousQuote" class="quote-back btn btn-danger btn-lg fa fa-chevron-left" title="Previous quote"></button>
+        </li>
+        
+        <li>
+          <button id="getQuote" class="quote-new btn btn-primary btn-lg" title="New Quote">New Quote</button>
+        </li>
+        
+        <li>
+          <button id="nextQuote" class="quote-forward btn btn-danger btn-lg fa fa-chevron-right" title="Next Quote"></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+  
+  <hr>
+  
+<footer>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="list-inline">
+          <li>  
+          <p>Free Code Camp Challenge: <a href="https://www.freecodecamp.com/challenges/build-a-random-quote-machine" target="_blank">Build a Random Quote Machine</a></p>
+          </li>
+          <li>
+            <p>Designed by <a href="https://codepen.io/aukseallegra/" target="_blank">Allegra</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer> 
+
+<!--SCRIPT LINKS END OF BODY-->  
+    
+<!--4.jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<!-- JAVASCRIPT -->
+<script src="main.js"></script>
+
+<!--5.this one for TETHER.IO-->
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    
+<!--6.JS for BOOTSTRAP-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
